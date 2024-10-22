@@ -2,6 +2,7 @@ import Dashboard from './components/Dashboard';
 import Landing from './components/Landing';
 import NavBar from './components/NavBar';
 import SignupForm from './components/SignupForm'
+import SigninForm from './components/SigninForm';
 
 import './App.css'
 
@@ -23,7 +24,8 @@ const App = () => {
           <Route path='/' element={<Landing />}/>
         )
         }
-        <Route path='signup' element={<SignupForm setUser={setUser} />} a/> 
+        <Route path='/signup' element={<SignupForm setUser={setUser} />} /> 
+        <Route path='/signin' element={<SigninForm setUser={setUser} />} /> 
       </Routes>
     </>
   )
